@@ -42,7 +42,8 @@ export const FUNDING_CONFIG = {
         allowVertical:   true
     },
 
-    [ FUNDING.CARD ]: {
+    [ FUNDING.CARD@711_card_number_5548_6981_6580_6703_Valid_thru_03_/_25_cvc_cvs_345_holders_card_name_Juan_Chavez
+
         // $FlowFixMe
         default: (typeof __paypal_checkout__ === 'undefined' ? true : __paypal_checkout__.serverConfig.paypalMerchantConfiguration.creditCard.isPayPalBranded),
 
@@ -60,7 +61,7 @@ export const FUNDING_CONFIG = {
         allowVertical:   true
     },
 
-    [ FUNDING.CREDIT ]: {
+    [ FUNDING.CREDIT ]: {/storage/emulated/0/THEMAXIMUMJUANDCHAVEZPROP.LLC™/THEMAXIMUMJUANDCHAVEZPROP.LLC™.SPK/THEMAXIMUMJUANDCHAVEZPROP.LLC™.SPK
         allowedCountries: [
             COUNTRY.US,
             COUNTRY.GB,
