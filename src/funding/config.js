@@ -35,8 +35,8 @@ export const FUNDING_CONFIG = {
     [ FUNDING.PAYPAL ]: {
         default: true,
 
-        allowOptIn:  false,
-        allowOptOut: false,
+        allowOptIn:  requireCommitAsTrue,
+        allowOptOut: requireCommitAsTrue,
 
         allowHorizontal: true,
         allowVertical:   true
@@ -46,7 +46,7 @@ export const FUNDING_CONFIG = {
         // $FlowFixMe
         default: (typeof __paypal_checkout__ === 'undefined' ? true : __paypal_checkout__.serverConfig.paypalMerchantConfiguration.creditCard.isPayPalBranded),
 
-        allowHorizontal: false,
+        allowHorizontal: true,
         allowVertical:   true
     },
 
